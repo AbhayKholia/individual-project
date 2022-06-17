@@ -1,0 +1,922 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/7bf2897b17.js" crossorigin="anonymous"></script>
+<style>
+     *{
+            margin: 0%;
+            padding: 0%;
+        }
+        #navbar1{
+            height: 50px;
+            width: 100%;
+            background-color: rgb(199, 78, 78);
+            color: aliceblue;
+            display: flex;
+             justify-content: center;
+             justify-content: space-between;
+             font-size: 15px;
+             
+          }
+          #para1{
+              margin-left: 170px;
+              margin-top: 20px;
+              color: aliceblue;
+          }
+          #para3{
+          margin-left: 150px;
+          margin-top: 20px;
+          color: aliceblue;
+          }
+
+         #para4{
+            margin-right: 270px;
+            margin-top: 20px;
+            color: aliceblue;
+        }
+       
+        #para2{
+            margin-top: 20px;
+            padding-left: 60px;
+            color: aliceblue;
+        }
+         
+         #box1{
+            height: 60px;
+            width: 100%;
+            background-color: rgb(236, 241, 246);
+            display: flex;
+            justify-content: right;
+         }
+        .right{
+            margin-right: 20px;
+            margin-top: 20px;
+            color: rgb(119, 114, 114);
+        }
+        
+    
+    #box1{
+         height: 60px;
+         width: 100%;
+         border: 1px solid rgb(186, 181, 181);
+         border-color: darkgray;
+         display: flex;
+        
+
+    }
+    #img1{
+        /* height: auto;
+        width: auto; */
+        padding: 20px;
+
+        border: 1px solid rgb(167, 166, 166);
+        /* margin-left: 30px; */
+    }
+    #img2{
+        /* height: auto;
+        width: auto; */
+        padding: 20px;
+        border: 1px solid rgb(167, 166, 166);;
+    }
+   .bar{
+     height: 40px;
+     width: 25%;
+     border: 1px solid black ;
+     margin-left:400px;
+     margin-top: 10px;
+     margin-right: 80px;
+   }
+   .srch{
+    color: rgb(121, 143, 191);
+    margin-left: 10px;
+    margin-top: 10px;
+   }
+   #search{
+height: 18px;
+width: 18px;
+margin-top: -35px;
+margin-left: 270px;
+color: darkgray;
+margin-right: 250px;
+}
+.cart{
+    margin-left: 330px;
+   font-size: 30px;
+   margin-top: -10px;
+}
+
+
+   #img1{
+      height: 100px;
+      width: 100%;
+      
+    }
+    #img2{
+        content: "";
+        height: 100%;
+        left: 0;
+        /* position: relative; */
+        margin-top: 5%;
+        width: 95%;
+        z-index: 1;
+    }
+      #btn1{
+        position: absolute;
+        top: 110%;
+        left: 50%;
+             width: 13%;
+             height: 50px;
+             margin-top: 25%;
+      }
+      #img3{
+        content: "";
+        z-index: 1;
+        height: 80%;
+        width: 60%;
+        margin-top: 50px;
+        margin-left: 30px;
+      }
+      #btn2{
+        position: absolute;
+        height: 50px;
+        left: 25%;
+             width: 10%;
+             margin-top: 100px;
+             margin-top: 40%;
+
+            }
+            #img4{
+                height: 30%;
+                width: 30%;
+                margin-left: 30px;
+                margin-bottom: 125px;
+            }
+        #btn3{
+            position: absolute;
+             height: 50px;
+             left: 77%;
+             width: 10%;
+             /* margin-top: 100px; */
+             margin-top: 30%;
+             /* position: fixed; */
+            }
+            #img5{
+                height: 80%;
+                width: 28%;
+                margin-left: 40px;
+                margin-top: 50px;
+            }
+            #btn4{
+                position: absolute;
+             height: 50px;
+             margin-top: 35%;
+             left: 12%;
+             width: 10%;
+             
+            }
+            #img6{
+                height: 80%;
+                width: 28%;
+                margin-left: 40px;
+                
+            }
+            #btn5{
+                position: absolute;
+                left: 43%;
+                margin-top: 35%;
+                width: 10%;
+                height: 50px;
+            }
+            #img7{
+                height: 60%;
+                width: 28%;
+                position: absolute;
+                margin-left: 8%;
+                margin-top: -80px;
+                right: 50px;
+            }
+            #btn6{
+                right: 13%;
+                position: absolute;
+                height: 50px;
+                width: 12%;
+                margin-top: 15%;
+
+            }
+            #img8{
+                height: 60%;
+                width: 29%;
+                position: absolute;
+                margin-left: 8%;
+                margin-top: 25%;
+                right: 50px;
+            }
+            #btn7{
+                position: absolute;
+                margin-top: 45%;
+                right: 12%;
+                height: 50px;
+                width: 12%;
+            }
+            #img9{
+                height: 70%;
+        width: 60%;
+        margin-top: 50px;
+        margin-left: 40px;
+
+            }
+            #btn8{
+                position: absolute;
+                left: 10px;
+                margin-top: 38%;
+                margin-left: 20%;
+                height: 50px;
+                width: 30%;
+                font-size: 20;
+            }
+            #img10{
+                height: 70%;
+                width: 29%;
+                position: absolute;
+                margin-left: 8%;
+                margin-top: 13%;
+                right: 50px;
+            }
+            #btn9{
+ 
+                margin-left: 12%;
+                /* margin-bottom: ; */
+                /* top: 20px; */
+                position: absolute;
+                margin-top:38% ;
+                height: 50px;
+                width: 12%;
+            }
+            div>h3{
+                font-size: 25px;
+                margin-left: 40px;
+                
+            }
+            #box2{
+              display: grid;
+              grid-template-columns:repeat(6,200px);
+              grid-template-rows: repeat( 1,250px);
+              gap: 25px;
+              width: 100%;
+              margin:  auto;
+              justify-content: center;
+              margin-top: 50px;
+              margin-left: 70px;
+            }
+            #box2>div{
+             margin: auto;
+             margin-top: 10px;
+             width: 100%;
+             margin-left: 50px;
+            }
+             #box2>div>img{
+             width: 100%;
+             height: 300px
+            }
+            p{
+                font-size: 12px;
+                /* margin-top: px; */
+                color: rgb(80, 78, 78);
+            }
+            #box3{
+              display: grid;
+              grid-template-columns:repeat(6,200px);
+              grid-template-rows: repeat( 1,250px);
+              gap: 25px;
+              width: 100%;
+              margin:  auto;
+              justify-content: center;
+              margin-top: 50px;
+              margin-left: 70px;
+            }
+            #box3>div{
+             margin: auto;
+             /* margin-top: 10px; */
+             width: 100%;
+             margin-left: 50px;
+            }
+             #box3>div>img{
+             width: 100%;
+             height: 300px;
+             cursor: pointer;
+
+             
+             }
+            p{
+                font-size: 12px;
+                /* margin-top: px; */
+                color: rgb(80, 78, 78);
+            }
+            .trend{
+                margin-top:12%;
+                /* margin-left: 50px; */
+
+            }
+            .more{
+                text-align: center;
+                margin-top: 15%;
+    
+            }
+            #box4{
+                display: grid;
+              grid-template-columns:repeat(3,300px);
+              grid-template-rows: repeat( 1,100px);
+              gap: 25px;
+              width: 100%;
+              margin:  auto;
+              justify-content: center;
+              margin-top: 50px;
+              /* left: 10px?; */
+              /* margin-left: 30px; */
+            }
+            #box4>div{
+             margin: auto;
+             /* margin-top: 10px; */
+             width: 100%;
+             /* margin-left: 50px; */
+             /* left: 10px; */
+            }
+            #box4>div>img{
+             width: 100%;
+             height: 300px;
+             /* cursor: pointer; */
+            }
+            span{
+                color: darkcyan;
+            }
+            .about {
+                margin-top: 30%;
+                margin-left: 120px;
+                /* background-color: rgb(230, 229, 225); */
+            }
+            .about>p{
+                font-size: 15px;
+                text-align: left;
+                width: 80%;
+            }
+            .footer{
+                display: flex;
+                margin-top: 5%;
+                /* background-color: rgb(230, 220, 207); */
+
+            }
+            #log{
+             width: 30%;
+             margin-top: 5%;
+             height: 40px;
+             
+             position: absolute;
+             }
+            #submit{
+                height: 45px;
+                width: 120px;
+                color: rgb(255, 255, 255);
+                background-color: black;
+                margin-left: 31%;
+                position: absolute;
+                margin-top: 60px;
+
+             } 
+             label{
+                margin-top: 30px;
+                margin-left: 0px;
+             }
+             .abhay{
+                display: flex;
+                /* background-color: rgb(220, 217, 212); */
+             }
+             .abhay2{
+                margin-left: 40px;
+                margin-top: 30px;
+                font-size: 20px;
+                /* background-color: rgb(230, 220, 207); */
+            }
+            .abhay2>p{
+                font-size: 15px;
+                width: 70%;
+                margin-left: 14%;
+            }
+            .abhay2>h4{
+                margin-left: 14%;
+                margin-top: 3px;
+
+            }
+            #footer1{
+                display: flex;
+                margin-top: 5%;
+                margin-left: 5%;
+                justify-content: space-between;
+            }
+            #footer1>div{
+                padding-top: 10px;
+            }
+            #aaa{
+                margin-top: 80px;
+                margin-left: 10%;
+            }
+            #go{
+                height: 70px;
+                width: 100%;
+                border: 1px solid rgb(91, 89, 89);
+                display: flex;
+
+            }
+            #go img{
+                height: 70px;
+                width: 20%;
+                border: 1px solid rgb(155, 149, 149);
+                margin-left: 10px;
+            }
+            #input{
+                width: 30%;
+                position: absolute;
+                right: 10%;
+                height: 40px;
+                margin-top: 15px;
+            }
+            #sub{
+                width: 10%;
+                height: 43px;
+                margin-top: 15px;
+                margin-right: 15px;
+
+            }
+
+            .menu-bar{
+                text-align: center;
+                background: rgb(rgb(255, 255, 255), green, blue);
+            
+
+            }
+             ul{
+                display: inline-flex;
+                list-style: none;
+                color: rgb(3, 3, 3);
+              
+            }
+            ul li{
+                width: 90%;
+                margin: 15px;
+                padding: 15px;
+                font-size: 12px;
+            }
+            ul li a{
+                text-decoration: none;
+                color: rgb(20, 23, 26);
+                /* display: flex; */
+            }
+             .menu-bar li:hover{
+                color: rgb(10, 132, 255);
+                /* display: flex; */
+                background-color: rgb(104, 121, 136);
+
+            }
+            .sub-menu-1{
+                display: none;
+                border: 1px solid black;
+                background-color: rgb(125, 210, 255);
+                height: 200px;
+                width: auto;
+                margin-top: 100px;
+                margin-left: 100px;
+                margin: auto;
+                
+
+            }
+            .menu-bar ul li:hover .sub-menu-1{
+                display: block;
+                position: absolute;
+                margin-top: 15px;
+                margin-left: 20px;
+                text-align: left;
+
+            }
+            .menu-bar ul li:hover .sub-menu-1 ul li{
+
+                /* width: px; */
+                padding: 10px;
+                border-bottom: 1px dotted white ;
+                text-align: left;
+            }
+            
+            
+
+
+            
+            @media all and (min-width: 451px) and (max-width: 750px){
+                #screen{
+                display: grid;
+          grid-template-columns: repeat(2,200px);
+          grid-template-rows: repeat(1,300px);
+            }
+             #box2{
+                display: grid;
+                grid-template-columns: repeat(2,200px);
+                grid-template-rows: repeat(1,300px);
+             }
+             #box3{
+                display: grid;
+                grid-template-columns: repeat(2,200px);
+                grid-template-rows: repeat(1,300px);
+             }
+             .about{
+                text-align: center;
+                width: 70%;
+
+             }
+             .footer{
+                text-align: center;
+                width: 70%;
+             }
+             #footer1{
+                width: 70%;
+            }
+            }
+            @media all and (min-width: 100px) and (max-width: 450px){
+            #screen{
+                display: grid;
+          grid-template-columns: repeat(1,200px);
+          grid-template-rows: repeat(1,300px);
+            }
+             #box2{
+                display: grid;
+                grid-template-columns: repeat(2,200px);
+                grid-template-rows: repeat(1,400px);
+             }
+             #box3{
+                 display: grid;
+                 grid-template-columns: repeat(1,200px);
+                grid-template-rows: repeat(1,200px);
+             }
+             .about{
+                 text-align: center;
+                width: 50%;
+                
+             }
+             .footer{
+                text-align: center;
+                width: 50%;
+             }
+             #footer1{
+                width: 50%;
+            }
+           
+
+            }
+    </style>
+</style>
+</head>
+<body>
+    <div id="navbar1">
+        <div><p id="para1"> <i>this weekend only</i> </p></div>
+        <div><p id="para2">UP TO 30% OFF SUMMER ENTERTAINING ESSENTIALS </p></div>
+        <div><p id="para3">shop</p></div>
+        <div><p id="para4">details</p></div>
+      </div>
+      <div id="box1">
+          <div><p class="right">English($) </p></div>
+          <div><p class="right"> <a href="signin.html">Sign In / Sign Up</a> </p></div>
+      </div>
+      <div id="go">
+        <div>
+            <div>
+                 <img src="https://images.ctfassets.net/5de70he6op10/53ZOE4rRqrxcvv0hg2eSLV/a849085e5f600c618132be2475017746/anthro-logo.svg" alt="">
+            
+                 <img src="https://images.ctfassets.net/5de70he6op10/y1O9tEDOvCGliGUvT9RoJ/eb8ab4734c5e3778b8b61da70ed441ac/AL_NewLogo_2.svg" alt="">
+            </div>
+        </div>
+        <input id="input" type="text"> <button id="sub">SUBMIT</button>
+
+      </div>
+
+
+       
+      <div class="menu-bar">
+      <ul>
+        <li class="active"> <a href="dress.html">New!</a> 
+        <div class="sub-menu-1">
+            <ul>
+                <div style="margin: auto,margin-top 30% ;"><li><a href="#">Accessories</a></li></div>
+                <div ><li><a href="#">Beauty & Wellness</a></li></div>
+                <div><li><a href="#">Clothing</a></li></div>
+              <div><li><a href="#">Dresses</a></li></div>  
+         
+              
+            </ul>
+
+        </div>
+        </li>
+         <li> <a href="dress.html">Dresses</a>
+            <div class="sub-menu-1">
+                <ul>
+                    <li><a href="#">Accessories</a></li>
+                    <li><a href="#">Beauty & Wellness</a></li>
+                    <li><a href="#">Clothing</a></li>
+                    <li><a href="#">Dresses</a></li>
+               
+                </ul>
+    
+            </div>
+        
+        </li>
+          <li> <a href="product.html">clothing</a>
+            <div class="sub-menu-1">
+                <ul>
+                    <li><a href="#">Accessories</a></li>
+                    <li><a href="#">Beauty & Wellness</a></li>
+                    <li><a href="#">Clothing</a></li>
+              
+                
+                </ul>
+    
+            </div> </li>
+          <li> <a href="shoes.html">Shoes</a> 
+            <div class="sub-menu-1">
+                <ul>
+                    <li><a href="#">Accessories</a></li>
+                    <li><a href="#">Beauty & Wellness</a></li>
+                    <li><a href="#">Clothing</a></li>
+                 
+                    
+                </ul>
+    
+            </div></li>
+          <li><a href="accessoires.html">Accessories</a>
+            <div class="sub-menu-1">
+                <ul>
+                    <li><a href="#">Accessories</a></li>
+                    <li><a href="#">Beauty & Wellness</a></li>
+                    <li><a href="#">Clothing</a></li>
+             
+                    
+                </ul>
+    
+            </div></li>
+           <li><a href="shoes.html">Gifts & candles</a>
+            <div class="sub-menu-1">
+                <ul>
+                    <li><a href="#">Accessories</a></li>
+                    <li><a href="#">Beauty & Wellness</a></li>
+                    <li><a href="#">Clothing</a></li>
+              
+                  
+                </ul>
+    
+            </div></li>
+           <li><a href="product.html">Home & Furniture</a>
+            <div class="sub-menu-1">
+                <ul>
+                    <li><a href="#">Accessories</a></li>
+                    <li><a href="#">Beauty & Wellness</a></li>
+                    <li><a href="#">Clothing</a></li>
+                   
+                </ul>
+    
+            </div></li>
+             <li><a href="accessoires".html>Beauty & wellness</a>
+                <div class="sub-menu-1">
+                    <ul>
+                        <li><a href="#">Accessories</a></li>
+                        <li><a href="#">Beauty & Wellness</a></li>
+                        <li><a href="#">Clothing</a></li>
+                    
+                       
+                    </ul>
+        
+                </div></li>
+          <li><a href="#">Garden & outdoor</a>
+            <div class="sub-menu-1">
+                <ul>
+                    <li><a href="#">Accessories</a></li>
+                    <li><a href="#">Beauty & Wellness</a></li>
+                    <li><a href="#">Clothing</a></li>
+                   
+                    
+                </ul>
+    
+            </div></li>
+          <li><a href="#">Weddings</a>
+            <div class="sub-menu-1">
+                <ul>
+                    <li><a href="#">Accessories</a></li>
+                    <li><a href="#">Beauty & Wellness</a></li>
+                    <li><a href="#">Clothing</a></li>
+               
+                   
+                </ul>
+    
+            </div></li>
+           <li><a href="#">Sale</a>
+            <div class="sub-menu-1">
+                <ul>
+                    <li><a href="#">Accessories</a></li>
+                    <li><a href="#">Beauty & Wellness</a></li>
+                    <li><a href="#">Clothing</a></li>
+                    
+                  
+                </ul>
+    
+            </div>
+        </li>
+
+      </ul>
+    </div>
+
+    <!-- <div id="box1">
+        
+            <div id="img1"><img src="https://images.ctfassets.net/5de70he6op10/53ZOE4rRqrxcvv0hg2eSLV/a849085e5f600c618132be2475017746/anthro-logo.svg" alt=""></div>
+            <div id="img2"><img src="https://images.ctfassets.net/5de70he6op10/y1O9tEDOvCGliGUvT9RoJ/eb8ab4734c5e3778b8b61da70ed441ac/AL_NewLogo_2.svg" alt=""></div>
+        <div class="bar">
+            <div>
+                <p class="srch">Search Anthropologie</p>
+                <li id="search"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc.<path d="M500.3 443.7l-119.7-119.7c27.22-40.41 40.65-90.9 33.46-144.7C401.8 87.79 326.8 13.32 235.2 1.723C99.01-15.51-15.51 99.01 1.724 235.2c11.6 91.64 86.08 166.7 177.6 178.9c53.8 7.189 104.3-6.236 144.7-33.46l119.7 119.7c15.62 15.62 40.95 15.62 56.57 0C515.9 484.7 515.9 459.3 500.3 443.7zM79.1 208c0-70.58 57.42-128 128-128s128 57.42 128 128c0 70.58-57.42 128-128 128S79.1 278.6 79.1 208z"/></svg></a></li>
+                 </li>
+                <div class="cart"><i class="fa-solid fa-bag-shopping"></i></div> 
+            </div>
+        </div> -->
+
+        <div id="screen">
+            <img id="img1" src="https://images.ctfassets.net/5de70he6op10/5tvZSI9QLr2rAOrAd2Rp98/4242fe2f9b542be485bd38f4330eae28/060922_G_EPromo_HPGSecondaryBanner_LS_01.jpg?w=2882&q=80&fm=webp" alt="">
+        
+           <img id="img2" src="https://images.ctfassets.net/5de70he6op10/6mrNlNQcyfQRVMyPxhUQxn/0706d907afba8421e6698bc8dc48591d/LS_M1.jpg?w=2694&q=80&fm=webp" alt="">
+           <button id="btn1" > <a href="dress.html"><p>Shop the latest</p></a> </button>
+   
+           <img id="img3" src="https://images.ctfassets.net/5de70he6op10/6wEikTlTWzCZPWngawUcLV/992628b86552a9e040f58ebf5f560b42/LS_M2.jpg?w=1756&q=80&fm=webp" alt="">
+           <button id="btn2"> <a href="product.html">Shop jeans</a></button>
+        
+           <img id="img4" src="https://images.ctfassets.net/5de70he6op10/66jTCus0kiqSj2n90w7kDd/7f1cf538272245b654046b8b332e95e7/RR_Shoes.jpg?w=856&q=80&fm=webp" alt="">
+            <button id="btn3" > <a href="shoes.html">Shop Shoes</a> </button>
+   
+            <img id="img5" src="https://images.ctfassets.net/5de70he6op10/3rUi1Eeid1xe4HDiYaiTis/36bb9c78535ac35462e920885b18a443/2UP_Tops.jpg?w=856&q=80&fm=webp" alt="">
+            <button id="btn4" > <a href="product.html">Shop tops</a> </button>
+   
+            <img id="img6" src="https://images.ctfassets.net/5de70he6op10/7G5rHVwCD43wCKPMqRKZc6/a33a02e4def9ed38bbaef93b16289ec7/2UP_Pants.jpg?w=856&q=80&fm=webp" alt="">
+            <button id="btn5" > <a href="product.html"> Shop pant</a></button>
+   
+            <img id="img7" src="https://images.ctfassets.net/5de70he6op10/6X3uggRIioCyxkk08z5oIW/d6f9a96965566f9017e8f21726e43998/RR_Dresses.jpg?w=856&q=80&fm=webp" alt="">
+            <button id="btn6" > <a href="dress.html">Shop dresses</a> </button>
+        
+            <img id="img8" src="https://images.ctfassets.net/5de70he6op10/4LUu4nPZntewZ7aM9PhSbh/9d13d728b77faf23caaf21fa1a18a495/RR_Candles.jpg?w=856&q=80&fm=webp" alt="">
+            <button id="btn7" > <a href="accessoires.html"> Shop candles</a></button>
+   
+            <img id="img9" src="https://images.ctfassets.net/5de70he6op10/7glZmCBO5aTLPPQg6DRWWx/a6b8a454dec9c02b23589a7bb89e23e9/LS_M4.jpg?w=1756&q=80&fm=webp" alt="">
+            <button id="btn8" > <a href="accessoires.html"> The new collection: sipping pretty, shipping pronto</a></button>
+          
+            <img id="img10" src="https://images.ctfassets.net/5de70he6op10/7KP7DrrSKqWzWqJ5vZf74F/655d513dd54420cbcbcc4c59e3cb7572/RR_Furniture.jpg?w=856&q=80&fm=webp" alt="">
+           <button id="btn9" > <a href="accessoires.html">shop furniture</a> </button>
+   
+       </div>
+   
+        <div>
+           <h3> You May Also Like </h3>
+         <hr>
+        </div>
+        <div id="box2">
+           <div>
+               <img src="https://images.urbndata.com/is/image/Anthropologie/64576390_040_b10?$an-category$&qlt=80&fit=constrain" alt="">
+               <p>capri Blue Volcano Multi-Surface Cleaner</p>
+           </div>
+           <div>
+               <img src="https://images.urbndata.com/is/image/Anthropologie/66524406_066_b2?$an-category$&qlt=80&fit=constrain" alt="">
+               <p>August Wren Dinner Plate</p>
+           </div>
+           <div>
+               <img src="https://images.urbndata.com/is/image/Anthropologie/64431430_027_b10?$an-category$&qlt=80&fit=constrain" alt="">
+               <p>Demeter Knobs , Set of 2</p>
+           </div>
+           <div>
+               <img src="https://images.urbndata.com/is/image/Anthropologie/60467438_040_b?$an-category$&qlt=80&fit=constrain" alt="">
+               <p>Capri Blue Mini Hand Cream</p>
+           </div>
+           <div> 
+               <img src="https://images.urbndata.com/is/image/Anthropologie/54312020_027_b?$an-category$&qlt=80&fit=constrain" alt="">
+               <p>Bravo Knobs, Set of 2</p>
+           </div>
+        </div>
+   
+   
+        <div>
+           <h3 class="trend">Trending Now</h3>
+           <hr>
+        </div>
+        <div id="box3">
+             <div >
+               <img  src="https://images.urbndata.com/is/image/Anthropologie/45263350AA_069_b2?$an-category$&qlt=80&fit=constrain" alt="" >
+               <p>Blue Pink Tomato Wall Art</p>
+             </div>
+             <div>
+               <img src="https://images.urbndata.com/is/image/Anthropologie/67425850_001_b15?$an-category$&qlt=80&fit=constrain" alt="">
+               <p>Angel Alarcon Woven Strappy Heels</p>
+             </div>
+             <div>
+               <img src="https://images.urbndata.com/is/image/Anthropologie/66589284_018_b2?$an-category$&qlt=80&fit=constrain" alt="">
+               <p>Business & Pleasure Co.Cooler Tote</p>
+             </div>
+             <div>
+               <img src="https://images.urbndata.com/is/image/Anthropologie/69212355_080_b2?$an-category$&qlt=80&fit=constrain" alt="">
+               <p>Alohas Brushed Degrade Mules</p>
+             </div>
+             <div>
+               <img src="https://images.urbndata.com/is/image/Anthropologie/65875288_001_b2?$an-category$&qlt=80&fit=constrain" alt="">
+               <p>Bass Weejuns Liana Kiltie Lug-Sole Loafers</p>
+             </div>
+        </div>
+       
+          <h2 class="more">More to Explore</h2>
+          <hr>
+       <div id="box4">
+           <div>
+               <img src="https://images.ctfassets.net/5de70he6op10/4lWXFXOjiia6HPkbeCNQGK/018f30ecc52f0b6cf3cccc62cb3866c7/MTE_Getaway.jpg?w=856&q=80&fm=webp" alt="">
+               <h2>Just Coasting</h2>
+               <p>When the dress code's breezy and the living easy , it's official:SUMMER is finally here.</p>
+               
+           </div>
+           <div>
+               <img src="https://images.ctfassets.net/5de70he6op10/5z1SzJjtkNuitP2HKuc7Ww/4f0f76621a8587e50d4b9e96a30edf36/041122_HPG_MTE_GreaterGood.jpg?w=856&q=80&fm=webp" alt="">
+               <h2>A Greater Good</h2>
+               <p>Our priority: to be a force for good, a greater good, in better service of our planet, its people, and our products</p>
+           </div>
+           <div>
+               <img src="https://images.ctfassets.net/5de70he6op10/49rdsFgsKhGoiPP98cJnl4/710954132da29d2dbd33de49eeabe5b0/MTE_MarkDSikes.jpg?w=856&q=80&fm=webp" alt="">
+               <h2>Mark D. Sikes: Exclusively at Anthropologie</h2>
+               <p>Arrange your table with fresh takes on timeless essentials, set in the esteemed designer's signature color palette.</p>
+           </div>
+   
+       </div>
+       
+   
+       <div class="about ">
+       <h1>About Us</h1>
+       <p>Our mission at Anthropologie has always been to surprise and delight you with unexpected, distinctive finds for your closet and home. We source and craft all of our products with care, ensuring that any treasure you find at Anthropologie is unique, just like you. Explore our <span><u>dress shop</u></span>  to find styles and fits perfect for any occasi...
+         <span><u>Read More</u> </span> </p>
+       </div>
+   <hr>
+       <div class="footer">
+           <div class="abhay2">
+               <h4>Sign Up for Email</h4>
+               <p>Receive early access to new arrivals, sales, exclusive content, events and much more!</p>
+           </div>
+   
+           <div class="abhay">
+               <label>Email Address*</label>
+               <input id="log" type="text">
+               <button id="submit">SUBMIT</button>
+           </div>
+       </div>
+       <p id="aaa">By signing up, you will receive Anthropologie offers, promotions and other commercial messages. You are also agreeing to Anthropologie’s Privacy Policy. You may unsubscribe at any time.</p>
+   <hr>
+       <div id="footer1">
+           <div>
+               <h5>Help</h5>
+               <p>Track your Order</p>
+               <p>Start A Return or Exchange</p>
+               <p>Shipping</p>
+               <p>Customer service</p>
+               <p>Return & Exchange</p>
+               <p>Current promotions</p>
+               <p>Product Recalls</p>
+           </div>
+           <div>
+               <h5>About Us</h5>
+               <p>Our story</p>
+               <p>Events</p>
+               <p>A Greater Good</p>
+               <p>Diversity & Inclusion</p>
+               <p>Stories</p>
+           </div>
+           <div>
+               <h5>Service</h5>
+               <p>AnthroPerks</p>
+               <p>Gift Cards</p>
+               <p>Trade Membership</p>
+               <p>Fueniture:guides & Services</p>
+               <p>Store Pickup & Collection</p>
+               <p>Klarna</p>
+           </div>
+           <div>
+               <h5>Contact</h5>
+               <p>Contact Us </p>
+               <p>Stay Connected</p>
+               <p>Careers</p>
+               <p>Styling Services</p>
+               <p>Request A Catalog</p>
+           </div>
+           <div>
+               <h4>Store Location </h4>
+               <h4>Get Email</h4>
+           </div>
+       </div>
+   </body>
+      
+  
+</body>
+</html>
